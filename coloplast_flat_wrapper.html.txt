@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Flourish Wrapper</title>
+  <style>
+    /* Your Tableau container size */
+    #container {
+      width: 781px;
+      height: 383px;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    /* Scale the embedded Flourish visual */
+    #scaled-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: top left;
+      transform: scale(SCALE_VALUE);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <div id="scaled-content">
+    <iframe 
+      src="https://public.flourish.studio/visualisation/26356623/embed" 
+      width="900" 
+      height="600" 
+      frameborder="0" 
+      scrolling="no">
+    </iframe>
+  </div>
+</div>
+
+</body>
+</html>
